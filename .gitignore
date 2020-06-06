@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+.vscode/
+Assets/6000FlatButtonIcon/
+Assets/TextMesh Pro/
+Assets/6000FlatButtonIcon.meta
+Assets/TextMesh Pro.meta
