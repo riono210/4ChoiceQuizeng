@@ -1055,6 +1055,7 @@ GameObject:
   - component: {fileID: 333999948}
   - component: {fileID: 333999947}
   - component: {fileID: 333999946}
+  - component: {fileID: 333999949}
   m_Layer: 5
   m_Name: AnserButton1
   m_TagString: Untagged
@@ -1124,7 +1125,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 333999947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333999949}
+        m_MethodName: ClieckBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &333999947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,6 +1173,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333999944}
   m_CullTransparentMesh: 0
+--- !u!114 &333999949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333999944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfd7847e43671145b950eeb56c62eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoiceIndex: 0
+  displayQuestion: {fileID: 1025924959}
 --- !u!1 &456405661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,6 +1260,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456405661}
   m_CullTransparentMesh: 0
+--- !u!1 &520233579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520233580}
+  m_Layer: 0
+  m_Name: QuizManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520233580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520233579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 502.9961, y: 666.34375, z: 144.125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &553373499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1735,7 @@ GameObject:
   - component: {fileID: 887753678}
   - component: {fileID: 887753677}
   - component: {fileID: 887753676}
+  - component: {fileID: 887753679}
   m_Layer: 5
   m_Name: AnserButton3
   m_TagString: Untagged
@@ -1748,7 +1805,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 887753677}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 887753679}
+        m_MethodName: ClieckBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &887753677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1853,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887753674}
   m_CullTransparentMesh: 0
+--- !u!114 &887753679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887753674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfd7847e43671145b950eeb56c62eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoiceIndex: 0
+  displayQuestion: {fileID: 1025924959}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,6 +2063,11 @@ MonoBehaviour:
   - {fileID: 142932771}
   - {fileID: 18474815}
   questionTextTMP: {fileID: 1090399519}
+  answerChecker:
+  - {fileID: 333999949}
+  - {fileID: 2019911647}
+  - {fileID: 887753679}
+  - {fileID: 1762918736}
 --- !u!114 &1025924960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2372,6 +2459,7 @@ GameObject:
   - component: {fileID: 1762918735}
   - component: {fileID: 1762918734}
   - component: {fileID: 1762918733}
+  - component: {fileID: 1762918736}
   m_Layer: 5
   m_Name: AnserButton4
   m_TagString: Untagged
@@ -2441,7 +2529,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1762918734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762918736}
+        m_MethodName: ClieckBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1762918734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2478,6 +2577,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762918731}
   m_CullTransparentMesh: 0
+--- !u!114 &1762918736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762918731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfd7847e43671145b950eeb56c62eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoiceIndex: 0
+  displayQuestion: {fileID: 1025924959}
 --- !u!1 &1766010013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,6 +2639,7 @@ GameObject:
   - component: {fileID: 2019911646}
   - component: {fileID: 2019911645}
   - component: {fileID: 2019911644}
+  - component: {fileID: 2019911647}
   m_Layer: 5
   m_Name: AnserButton2
   m_TagString: Untagged
@@ -2595,7 +2709,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2019911645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019911647}
+        m_MethodName: ClieckBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2019911645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2632,3 +2757,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019911642}
   m_CullTransparentMesh: 0
+--- !u!114 &2019911647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019911642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfd7847e43671145b950eeb56c62eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoiceIndex: 0
+  displayQuestion: {fileID: 1025924959}

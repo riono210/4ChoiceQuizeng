@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class QuestionGenerator : MonoBehaviour {
 
-    public class Questions {
-        public string questinText;
-        public int answerNum;
-        public string[] choices;
-
-        public Questions () {
-            questinText = null;
-            answerNum = 0;
-            choices = new string[4];
-        }
-    }
-
     // 問題形式判定
     public string QuestionFormatSwicher (int formatNum, string keyword) {
         string problemStatement;
