@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnswerChecker : MonoBehaviour {
 
     public int ChoiceIndex;    // 選択肢の識別番号
-    public DisplayQuestion displayQuestion;
+    public QuizManager displayQuestion;
 
 
     // ボタンクリックすると呼ばれる　押されたことを通知して正解かをチェックしたい
